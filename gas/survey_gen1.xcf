@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<APPLICATION Parent="defaultgdc"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://www.4js.com/ns/gas/3.00/cfextwa.xsd">
+  <RESOURCE Id="res.genver" Source="INTERNAL">300</RESOURCE>
+  <RESOURCE Id="res.gre" Source="INTERNAL">/opt/fourjs/gre300</RESOURCE>
+  <RESOURCE Id="res.path.isv" Source="INTERNAL">/home/neilm/all</RESOURCE>
+  <RESOURCE Id="res.path.njm_demo" Source="INTERNAL">$(res.path.isv)/survey</RESOURCE>
+  <RESOURCE Id="res.path.njm_demo.obj" Source="INTERNAL">$(res.path.njm_demo)/bin</RESOURCE>
+  <EXECUTION AllowUrlParameters="TRUE">
+    <ENVIRONMENT_VARIABLE Id="FGLRESOURCEPATH">$(res.path.njm_demo)/etc:$(res.path.njm_demo.obj)</ENVIRONMENT_VARIABLE>
+    <!--ENVIRONMENT_VARIABLE Id="FGLIMAGEPATH">$(res.path.njm_demo)/pics:$(res.path.njm_demo)/pics/image2font.txt</ENVIRONMENT_VARIABLE-->
+    <ENVIRONMENT_VARIABLE Id="GREDIR">$(res.gre)</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="FGLLDPATH">$(res.gre)/lib</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="REPORTDIR">$(res.path.njm_demo)/etc/</ENVIRONMENT_VARIABLE>
+    <!--ENVIRONMENT_VARIABLE Id="FGLPROFILE">$(res.path.njm_demo)/etc/profile</ENVIRONMENT_VARIABLE-->
+    <ENVIRONMENT_VARIABLE Id="DBPRINT">FGLSERVER</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="DBDATE">DMY4/</ENVIRONMENT_VARIABLE>
+    <PATH>$(res.path.njm_demo.obj)</PATH>
+    <MODULE>survey_gen.42r</MODULE>
+    <WEB_COMPONENT_DIRECTORY>$(res.path.njm_demo)/etc</WEB_COMPONENT_DIRECTORY>
+  </EXECUTION>
+  <UA_OUTPUT>
+     <PROXY>$(res.uaproxy.cmd)</PROXY>
+     <PUBLIC_IMAGEPATH>$(res.public.resources)</PUBLIC_IMAGEPATH>
+     <GWC-JS>mrh-js</GWC-JS>
+  </UA_OUTPUT>
+</APPLICATION>

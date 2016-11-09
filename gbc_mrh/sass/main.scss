@@ -1,0 +1,30 @@
+
+
+body {
+	background: #39393a;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 28px;   
+	font-weight: 800;
+}
+
+h3 {
+	font-size: 1.17em;
+}
+
+footer {
+	font-size: 12px;   
+	font-weight: normal;
+	text-transform: uppercase
+}
+
+.mt-card {
+	color: $gbc-primary-light-color;
+	background-color: $gbc-primary-background-color;
+}
+

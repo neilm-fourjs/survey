@@ -1,0 +1,58 @@
+TOOLBAR
+	ITEM quit (TEXT="Exit", IMAGE="exit")
+	ITEM new (TEXT="New", IMAGE="new")
+	ITEM edit_question (TEXT="Edit Question", IMAGE="pen")
+	ITEM edit_answers (TEXT="Edit Anwers", IMAGE="pen")
+	ITEM exit_save (TEXT="Exit/Save", IMAGE="fa-save")
+END -- TB
+
+LAYOUT (TEXT="Survey Generation", STYLE="main2")
+VBOX
+GRID
+{
+<G "Survey"                                               >
+ Name:    [a001                   ]
+
+<G "Question"                                             >
+ Category:[l_cat                              ]
+ Type:    [l_questtype               ]
+ Text:    [l_quest                                       ]
+}
+END -- GRID
+TABLE
+{
+[category             ][qt][quest                        ]
+[category             ][qt][quest                        ]
+[category             ][qt][quest                        ]
+}
+END -- TABLE
+TABLE
+{
+[c][answer                                              ]
+[c][answer                                              ]
+[c][answer                                              ]
+[c][answer                                              ]
+[c][answer                                              ]
+}
+END -- TABLE
+END -- VBOX
+
+ATTRIBUTES
+a001 = FORMONLY.l_survey_name, NOT NULL, REQUIRED;
+
+l_cat = FORMONLY.l_cat, NOT NULL, REQUIRED;
+RADIOGROUP l_questtype = FORMONLY.l_quest_type,
+		ITEMS=(("S","Single Answer"),("M","Multiple Answers")), 
+		ORIENTATION=HORIZONTAL,
+		NOT NULL;
+l_quest = FORMONLY.l_quest;
+
+category = FORMONLY.category, TITLE="Category";
+qt = FORMONLY.quest_type, TITLE="Ty";
+quest = FORMONLY.question, TITLE="Question";
+c = FORMONLY.answer_code, TITLE="A", NOENTRY;
+answer = FORMONLY.answer, TITLE="Answers", NOT NULL;
+
+INSTRUCTIONS
+SCREEN RECORD scr_arr_1 ( FORMONLY.category THRU FORMONLY.question )
+SCREEN RECORD scr_arr_2 ( FORMONLY.answer_code THRU FORMONLY.answer )

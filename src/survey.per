@@ -1,0 +1,31 @@
+
+TOOLBAR
+	ITEM cancel (TEXT="Exit", IMAGE="exit")
+	ITEM accept (TEXT="Complete", IMAGE="accept")
+	ITEM continue (TEXT="Continue", IMAGE="arright")
+END -- TB
+
+LAYOUT (TEXT="Dynamic Survey", STYLE="main2")
+VBOX
+GROUP (TEXT="This is a dynamic survey demo")
+GRID questions
+{
+
+}
+END -- GRID
+END -- GROUP
+
+GRID answers
+{
+<G "Answers"                                                           >
+ [a001                                                                ]
+ [                                                                    ]
+ [                                                                    ]
+ [                                                                    ]
+}
+END -- GRID
+
+END -- VBOX
+
+ATTRIBUTES
+TEXTEDIT a001 = FORMONLY.l_answers, STRETCH=BOTH;

@@ -1,0 +1,59 @@
+{
+  "gbc-font-size-ratio"    : "0.8",
+  "gbc-margin-ratio"       : "0.6",
+  "gbc-field-height-ratio" : "0.7",
+  "gbc-radiobutton-size"   : "14px",
+  "gbc-checkbox-size"      : "14px",
+
+  "gbc-primary-background-color"         : "$mt-white",
+  "gbc-secondary-background-color"       : "#c2b7d4",  // light purple
+  "gbc-field-background-color"           : "$mt-white",
+  "gbc-field-disabled-background"        : "rgba(0,0,0,0.04)",
+  "gbc-primary-color"                    : "$mt-black",
+  "gbc-primary-medium-color"             : "#c2b7d4", // light purple
+  "gbc-primary-light-color"              : "#674a93", // dark purple
+  "gbc-secondary-color"                  : "$mt-grey-600",
+  "gbc-disabled-color"                   : "$mt-grey-400",
+  "gbc-separator-color"                  : "$mt-grey-400",
+  "gbc-header-color"                     : "$mt-grey-100",
+  "gbc-message-color"                    : "$mt-grey-800",
+  "gbc-error-color"                      : "$mt-red-800",
+  "gbc-sidebar-always-visible-min-width" : "1400px",
+  "gbc-sidebar-default-width"            : "300px",
+  "gbc-animation-duration"               : "0.7s",
+  "gbc-desactivate-ending-popup"         : false
+}
+
+gbc-primary-text-color
+gbc-secondary-text-color
+gbc-field-disabled-background-color
+gbc-field-readonly-background-color
+gbc-genero-black
+gbc-mt-checkbox-secondary
+gbc-mt-checkbox-disabled
+gbc-mt-checkbox-primary
+gbc-mt-checkbox-primary-check
+
+
+
+
+main text
+-webkit-font-smoothing: antialiased;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: 400;
+text-color: #989898;   /* pale gray */
+
+heading 1
+font-size: 28px;   
+font-weight: 800;
+
+heading 3
+font-size: 1.17em;
+
+footer
+font-size: 12px;   
+font-weight: normal;
+text-transform: uppercase
+
+
