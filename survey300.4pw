@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Project defaultApplication="-1072928214" gstVersion="3001d" version="3.1">
+<Project defaultApplication="18736" gstVersion="3001d" version="3.1">
   <Settings>
     <DynamicProperties version="2">
       <DynamicProperty description="Accent color (Android 5.0 and later)" initialValue="#9575CD" isDefaultInherited="false" isHidden="false" label="Accent color" name="gma-accent-color" readOnly="false" type="COLOR"/>
@@ -65,6 +65,16 @@
       <File filePath="gas/survey1.xcf"/>
       <File filePath="gas/survey_gen.xcf"/>
       <File filePath="gas/survey_gen1.xcf"/>
+    </Library>
+    <Library binaryName="GBC" id="61945867" label="GBC">
+      <File filePath="gbc_mrh/sass/customization.scss"/>
+      <File filePath="gbc_mrh/sass/main.scss"/>
+      <File filePath="gbc_mrh/js/MyHeaderBarWidget.js"/>
+      <File filePath="gbc_mrh/js/MyHeaderBarWidget.tpl.html"/>
+      <File filePath="gbc_mrh/js/MyMainContainerWidget.js"/>
+      <File filePath="gbc_mrh/sass/MyMainContainerWidget.scss"/>
+      <File filePath="gbc_mrh/js/MyMainContainerWidget.tpl.html"/>
+      <File filePath="gbc_mrh/theme.scss.json"/>
     </Library>
     <Application binaryName="survey" commandLineArguments="genero" id="18736" label="survey">
       <File filePath="src/survey.4gl"/>
